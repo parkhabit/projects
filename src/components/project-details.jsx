@@ -15,7 +15,7 @@ class ProjectDetails extends Component {
       skills
     } = this.props;
     return (
-      <React.Fragment>
+      <div className="w-30">
         <span className="overline-2 dark-text">{overview}</span>
         <Link to={projectLink} className="link action-area">
           <h2 className="heading-2 dark-text headingLink">{title}</h2>
@@ -29,7 +29,7 @@ class ProjectDetails extends Component {
           </div>
           <hr className="divider-light" />
         </Link>
-      </React.Fragment>
+      </div>
     );
   }
 }

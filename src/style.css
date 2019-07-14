@@ -72,12 +72,16 @@
   font-weight: 800;
   font-size: 0.9375rem;
   letter-spacing: 0.14rem;
-  text-decoration: none;
-  color: #f9f9f9;
   display: flex;
   padding: 1.3rem 0;
+}
+
+a {
+  color: #f9f9f9;
+  text-decoration: none;
   cursor: pointer;
 }
+
 .action-area {
   display: flex;
   flex-direction: column;
@@ -111,8 +115,14 @@
 }
 /* ///////////////////////////////////////////// FONTS_END */
 
+/* ///////////////////////////////////////////// FLEX */
+
 .d-flex {
   display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap; 
 }
 
 .direction-col {
@@ -121,6 +131,14 @@
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.d-none {
+  display: none;
 }
 
 .background-dark {
@@ -146,9 +164,26 @@
   height: 100vh;
 }
 
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+h1 {
+  margin: 4rem 0rem;
+}
+
 .divider-light {
   display: block;
   border: 1px solid #e7e7e7;
+}
+
+.divider-darker {
+  display: block;
+  border: 1px solid rgba(249, 249, 249, .5);
 }
 
 .divider-dark {
@@ -165,10 +200,6 @@
   
 .img-spacing {
   margin-top: 40%;
-}
-
-.arrow-icon {
-  /* padding-left: .5rem; */
 }
 
 .navigation-top {
@@ -207,4 +238,47 @@
 .exit {
   align-self: flex-end;
   margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .d-lg-none {
+    display: none;
+  }
+
+  .d-lg-flex {
+    display: flex;
+  }
+
+  .img-spacing {
+    margin-top: 20%;
+  }
+
+  .heading-1 {
+    font-size: 10rem;
+    line-height: normal;
+  }
+
+  .heading-6 {
+    font-size: 0.8125rem;
+  }
+
+  .heading-5 {
+    font-size: 1.5rem;
+  }
+
+  .overline-1 {
+    font-size: 1.75rem;
+  }
+
+  .overline-intro {
+    font-size: 1.5rem;
+  }
+
+  .overline-2 {
+    font-size: 1.5rem;
+  }
+
+  .w-30 {
+    width: 30%;
+  }
 }

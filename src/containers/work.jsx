@@ -11,7 +11,7 @@ class Work extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Nav page='work' />
+        <Nav page="work" />
         <Hero sideTitle="Page 02" heading="Work" overline="Projects." />
         <section className="background-dark">
           <h4 className="overline-2">Overview</h4>
@@ -22,7 +22,7 @@ class Work extends React.Component {
             some information. It is an overview of what this portfolio is.
           </p>
         </section>
-        <main className="background-light">
+        <main className="background-light d-flex flex-wrap justify-between">
           <ProjectDetails
             overview="Overview"
             projectLink=""
@@ -55,20 +55,21 @@ class Work extends React.Component {
             imgAlt="placeholder"
             skills="Project 3"
           />
-
-          <hr className="divider-small" />
-          <h4 className="heading-3 dark-text inline">Want to see more?</h4>
-          <p className="text dark-text">
-            Check out my GitHub
-            <br />
-            for other past projects.
-          </p>
-          <a href="https://www.github.com/parkhabit">
-            <button className="dark-button">
-              See more
-              <img src={arrowRight} alt="arrow" />
-            </button>
-          </a>
+          <div>
+            <hr className="divider-small" />
+            <h4 className="heading-3 dark-text inline">Want to see more?</h4>
+            <p className="text dark-text">
+              Check out my GitHub
+              <br />
+              for other past projects.
+            </p>
+            <a href="https://www.github.com/parkhabit">
+              <button className="dark-button">
+                See more
+                <img src={arrowRight} alt="arrow" />
+              </button>
+            </a>
+          </div>
         </main>
 
         <Footer

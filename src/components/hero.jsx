@@ -9,7 +9,7 @@ class Hero extends Component {
       <React.Fragment>
         <div className="background-dark">
           <div className="h100">
-            <hr className="divider-light" />
+            <hr className="divider-light d-lg-none" />
             <div className="img-spacing">
               <span className="overline-intro">{sideTitle}</span>
               <img src={pizza} alt="pizza icon" />
