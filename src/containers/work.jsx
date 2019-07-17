@@ -28,7 +28,7 @@ class Work extends React.Component {
             projectLink=""
             title="Skill Share"
             description="Internal work website"
-            paragraph="An idea conceptualised at a work hack-day. The purpose being to encourage colleagues to share their skills and knowledge in the workplace. By encouraging a peer-to-peer learning method a more open and interested workplace culture can emerge."
+            paragraph="Conceptualised at a work hack-day. The purpose being to encourage colleagues to share their skills and knowledge in the workplace. By encouraging a peer-to-peer learning method a more open and interested workplace culture can emerge."
             img={placeholder}
             imgAlt="placeholder"
             skills="Design, React, Airtable"
@@ -37,9 +37,9 @@ class Work extends React.Component {
           <ProjectDetails
             overview="Overview"
             projectLink="second-project"
-            title="Second Project"
-            description="How I think"
-            paragraph="Short statement, few words. But more than that just a little bit of information about the project and why I built it."
+            title="Design System"
+            description="Creating a design system"
+            paragraph="My major learnings from creating a design system within Reed.co.uk, how to take what we had and put it together to form some unified ideas."
             img={placeholder}
             imgAlt="placeholder"
             skills="Project 2"

@@ -16,12 +16,13 @@ class ProjectDetails extends Component {
     } = this.props;
     return (
       <div className="w-30">
-        <span className="overline-2 dark-text">{overview}</span>
+        
         <Link to={projectLink} className="link action-area">
+        <span className="overline-2 dark-text">{overview}</span>
           <h2 className="heading-2 dark-text headingLink">{title}</h2>
 
           <span className="heading-6 dark-text">{description}</span>
-          <p className="text dark-text">{paragraph}</p>
+          <p className="text dark-text h-20">{paragraph}</p>
           <img className="project-img" src={img} alt={imgAlt} />
           <div>
             <hr className="divider-small" />
