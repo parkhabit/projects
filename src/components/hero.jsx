@@ -7,7 +7,6 @@ class Hero extends Component {
     return (
       <React.Fragment>
         <div className="background-dark">
-          <div className="h100">
             <hr className="divider-light d-lg-none" />
             <div className="img-spacing">
               <span className="overline-intro">{sideTitle}</span>
@@ -15,7 +14,6 @@ class Hero extends Component {
             <h1 className="heading-1">{heading}</h1>
             <h3 className="overline-1">{overline}</h3>
           </div>
-        </div>
       </React.Fragment>
     );
   }

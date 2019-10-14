@@ -69,31 +69,46 @@ class Home extends Component {
             </article>
           </div>
         </section>
+        
+        
         <section className="background-semi-dark">
         <span className="overline-1">Blog</span>
           <h3 className="heading-2">What I write</h3>
-          <article>
-            <p className="heading-4">3rd March, 2019</p>
-            <Link to='article/1'>
-              <h3 className="heading-2 underlined">Title of the first blog</h3>
-            </Link>
-            <p className="heading-4">Building in accessibility is super important. I write about this in an article for medium.</p>
+          
+          <div className='w-lg-80 h-lg-100'>
+          <article className='d-lg-flex justify-around-lg margin-md'>
+            <p className="overline">3rd March, 2019</p>
+            <div>
+              <Link to='article/1'>
+                <h3 className="heading-2 underlined">Title of the first blog</h3>
+              </Link>
+              <p className="heading-4">Building in accessibility is super important. I write about this in an article for medium.</p>
+            </div>
           </article>
-          <article>
-            <p className="heading-4">3rd March, 2019</p>
-            <Link to='article/2'>
-            <h3 className="heading-2 underlined">Title of the first blog</h3>
-            </Link>
-            <p className="heading-4">Building in accessibility is super important. I write about this in an article for medium.</p>
+          <article className='d-lg-flex justify-around-lg margin-md'>
+            <p className="overline">3rd March, 2019</p>
+            <div>
+              <Link to='article/2'>
+                <h3 className="heading-2 underlined">Title of the first blog</h3>
+              </Link>
+              <p className="heading-4">Building in accessibility is super important. I write about this in an article for medium.</p>
+            </div>
           </article>
-          <article>
-            <p className="heading-4">3rd March, 2019</p>
-            <Link to='article/3'>
-            <h3 className="heading-2 underlined">Title of the first blog</h3>
-            </Link>
-            <p className="heading-4">Building in accessibility is super important. I write about this in an article for medium.</p>
+          <article className='d-lg-flex justify-around-lg margin-md'>
+            <p className="overline">3rd March, 2019</p>
+            <div>
+              <Link to='article/3'>
+                <h3 className="heading-2 underlined">Title of the first blog</h3>
+              </Link>
+              <p className="heading-4">Building in accessibility is super important. I write about this in an article for medium.</p>
+            </div>
           </article>
+          </div>
+
+
         </section>
+
+
         <section className="background-light d-flex flex-wrap justify-between">
           <ProjectDetails
             overview="Overview"
@@ -143,22 +158,7 @@ class Home extends Component {
             </a>
           </div>
         </section>
-        <Hero sideTitle="Page 03" heading="Call me" overline="Contact me via" />
-        <section className="background-dark">
-          <div>
-            <img src={phone} alt="phone icon" />
-            <h3 className="contact-text inline">+447490388067</h3>
-          </div>
-          <div>
-            <img src={email} alt="envelope icon" />
-            <h3 className="contact-text inline">parkhabit@gmail.com</h3>
-          </div>
-          <div>
-            <img src={github} alt="github icon" />
-            <h3 className="contact-text inline">github.com/parkhabit</h3>
-          </div>
-
-        </section>
+        <Hero heading="Say hi" overline="Email me at kallen91@gmail.com" />
       </React.Fragment>
     );
   }

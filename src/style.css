@@ -148,7 +148,7 @@ a {
 
 .background-dark {
   background-image: url('./assets/image.png');
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
@@ -156,8 +156,7 @@ a {
 
 .background-semi-dark {
   background-color: #282626;
-  height: 100%;
-  width: 100%;
+  min-height: 100vh;
   padding: 15px;
 }
 
@@ -165,11 +164,11 @@ a {
   background-color: #f9f9f9;
   padding: 15px;
   box-sizing: border-box;
+  min-height: 100vh;
 }
 
-.overlay {
-  position: fixed;
-  width: 100%;
+.margin-md {
+  margin: 60px 0 60px 0;
 }
 
 .h100 {
@@ -232,7 +231,7 @@ h1 {
 }
 
 .project-img {
-  width: 325px;
+  max-width: 325px;
   height: 170px;
 }
 
@@ -265,6 +264,10 @@ h1 {
     display: flex;
   }
 
+  .justify-around-lg {
+    justify-content: space-around;
+  }
+
   .img-spacing {
     margin-top: 20%;
   }
@@ -295,6 +298,16 @@ h1 {
   } */
 
   .w-30 {
-    width: 30%;
+    width: 33%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .w-lg-80 {
+    width: 80%;
+  }
+
+  .h-lg-100 {
+    height: 100%;
   }
 }
