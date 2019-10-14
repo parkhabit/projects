@@ -21,7 +21,6 @@
   letter-spacing: 0.05rem;
   font-size: 0.9375rem;
   font-weight: 600;
-  text-decoration-line: underline;
 }
 
 .heading-5 {
@@ -41,6 +40,11 @@
   font-weight: 600;
   font-size: 0.6875rem;
   line-height: 1.0625rem;
+}
+
+.underlined {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .overline-intro {
@@ -148,6 +152,13 @@ a {
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
+}
+
+.background-semi-dark {
+  background-color: #282626;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
 }
 
 .background-light {
