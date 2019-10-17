@@ -5,9 +5,6 @@ import { Link } from "react-router-dom";
 import ProjectDetails from "../components/project-details";
 import placeholder from "../assets/placeholder.jpg";
 import arrowRight from "../assets/arrow-right.png";
-import github from "../assets/github.svg";
-import phone from "../assets/phone.svg";
-import email from "../assets/email.svg";
 
 class Home extends Component {
   render() {
@@ -18,7 +15,8 @@ class Home extends Component {
           heading="Kitty Allen"
           overline="Hi, my name is Kitty. I'm a digital designer/developer working in London."
         />
-        <section className="background-light">
+        <div className='reveal-main'></div>
+        <section className="background-light bottom-curtain">
           <span className="overline-1 dark-text">Values</span>
           <h3 className="heading-2 dark-text">How I work</h3>
           <div className='d-flex flex-wrap'>
@@ -26,52 +24,40 @@ class Home extends Component {
             <article className='w-30'>
               <hr className="divider-dark" />
               <span className="overline-number dark-text">01</span>
-              <h5 className="heading-4 dark-text">Diversity matters</h5>
+              <h5 className="heading-4 dark-text">The user is key</h5>
               <p className="text dark-text">
-                This is some information. It describes the kind of things I care
-                about. The values that I have and maybe it's in relation to how
-                I work as a developer but not essentially about coding in
-                particular.
+              I am a problem solver, I love to code and fix issues, but the key issue I'm fixing is always for someone, the user. Whatever I'm creating, whether it be an experience, a feature, or a website it must benefit the user.
               </p>
             </article>
             <article className='w-30'>
               <hr className="divider-dark" />
               <span className="overline-number dark-text">02</span>
-              <h5 className="heading-4 dark-text">Accessibility for all</h5>
+              <h5 className="heading-4 dark-text">Inclusivity</h5>
               <p className="text dark-text">
-                This is some information. It describes the kind of things I care
-                about. The values that I have and maybe it's in relation to how
-                I work as a developer but not essentially about coding in
-                particular.
+                From the culture of the office I work in, to the users I consider, inclusivity is at the core of what I do. I consider myself to by an A11y and will encourage all workplaces that I am a part of to design and write code with accessibility in mind.
               </p>
             </article>
             <article className='w-30'>
               <hr className="divider-dark" />
               <span className="overline-number dark-text">03</span>
-              <h5 className="heading-4 dark-text">Sharing is caring</h5>
+              <h5 className="heading-4 dark-text">Ethical design</h5>
               <p className="text dark-text">
-                This is some information. It describes the kind of things I care
-                about. The values that I have and maybe it's in relation to how
-                I work as a developer but not essentially about coding in
-                particular.
+                I believe that creating digital proucts is a privelidge that comes with responsibilities to first do no harm. I want to be a part of making digital products that affect positive changes in the world. 
               </p>
             </article>
             <article className='w-30'>
               <hr className="divider-dark" />
               <span className="overline-number dark-text">04</span>
-              <h5 className="heading-4 dark-text">User is key</h5>
+              <h5 className="heading-4 dark-text">Collaboration</h5>
               <p className="text dark-text">
-                This is some information. It describes the kind of things I care
-                about. The values that I have and maybe it's in relation to how
-                I work as a developer but not essentially about coding in
-                particular.
+                The best products are made by working collaboratively with a myriad of different voices and opinions. I regularly add my voice to the tech/deisgn scene by holding brown bag sessions in my workplace, through articles I post on Medium, and general ramblings on twitter. 
               </p>
             </article>
           </div>
         </section>
         
         
-        <section className="background-semi-dark">
+        <section className="background-semi-dark top-curtain">
         <span className="overline-1">Blog</span>
           <h3 className="heading-2">What I write</h3>
           
@@ -108,8 +94,7 @@ class Home extends Component {
 
         </section>
 
-
-        <section className="background-light d-flex flex-wrap justify-between">
+        <section className="background-light d-flex flex-wrap justify-between top-curtain">
           <ProjectDetails
             overview="Overview"
             projectLink="project/1"

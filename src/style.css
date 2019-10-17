@@ -82,7 +82,7 @@
 }
 
 a {
-  color: #f9f9f9;
+  color: #f0f0f0;
   text-decoration: none;
   cursor: pointer;
 }
@@ -161,7 +161,7 @@ a {
 }
 
 .background-light {
-  background-color: #f9f9f9;
+  background-color: #f0f0f0;
   padding: 15px;
   box-sizing: border-box;
   min-height: 100vh;
@@ -219,7 +219,7 @@ h1 {
 
 .navigation-top {
   height: 3rem;
-  background-color: #fff;
+  background-color: #f0f0f0;
   padding: 15px 15px 5px 0;
 }
 
@@ -237,7 +237,7 @@ h1 {
 
 .dark-button {
   background-color: #282626;
-  color: #f9f9f9;
+  color: #f0f0f0;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 15px;
   height: 42px;
@@ -253,6 +253,23 @@ h1 {
 .exit {
   align-self: flex-end;
   margin-bottom: 2rem;
+}
+
+.top-curtain{
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.bottom-curtain {
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  height: 100vh;
+}
+
+.reveal-main {
+  height: 100vh;
 }
 
 @media only screen and (min-width: 768px) {

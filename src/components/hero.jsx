@@ -6,7 +6,7 @@ class Hero extends Component {
     const { sideTitle, heading, overline } = this.props;
     return (
       <React.Fragment>
-        <div className="background-dark">
+        <div className="background-dark top-curtain">
             <hr className="divider-light d-lg-none" />
             <div className="img-spacing">
               <span className="overline-intro">{sideTitle}</span>
