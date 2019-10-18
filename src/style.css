@@ -145,7 +145,6 @@ a {
 .d-none {
   display: none;
 }
-
 .background-dark {
   background-image: url('./assets/image.png');
   min-height: 100vh;
@@ -254,7 +253,7 @@ h1 {
   align-self: flex-end;
   margin-bottom: 2rem;
 }
-
+/* 
 .top-curtain{
   position: relative;
   z-index: 2;
@@ -264,13 +263,13 @@ h1 {
 .bottom-curtain {
   position: fixed;
   top: 0;
-  z-index: 0;
+  z-index: -1;
   height: 100vh;
-}
+} */
 
-.reveal-main {
+/* .reveal-main {
   height: 100vh;
-}
+} */
 
 @media only screen and (min-width: 768px) {
   .d-lg-none {

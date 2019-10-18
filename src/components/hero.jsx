@@ -3,11 +3,10 @@ import "../style.css";
 
 class Hero extends Component {
   render() {
-    const { sideTitle, heading, overline } = this.props;
+    const { sideTitle, heading, overline, id } = this.props;
     return (
       <React.Fragment>
-        <div className="background-dark top-curtain">
-            <hr className="divider-light d-lg-none" />
+        <div id={id} className="background-dark top-curtain">
             <div className="img-spacing">
               <span className="overline-intro">{sideTitle}</span>
             </div>
