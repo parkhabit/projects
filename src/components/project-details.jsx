@@ -19,7 +19,7 @@ class ProjectDetails extends Component {
         
         <Link to={projectLink} className="link action-area">
         <span className="overline-2 dark-text">{overview}</span>
-          <h2 className="heading-2 dark-text headingLink">{title}</h2>
+          <h2 className="heading-2-1 dark-text headingLink">{title}</h2>
 
           <span className="heading-6 dark-text">{description}</span>
           <p className="text dark-text h-20">{paragraph}</p>
@@ -28,7 +28,7 @@ class ProjectDetails extends Component {
             <hr className="divider-small" />
             <span className="underline dark-text">{skills}</span>
           </div>
-          <hr className="divider-light" />
+          <hr className="divider-dark" />
         </Link>
       </div>
     );

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../style.css";
-import Hero from "../components/hero";
 import Nav from "../components/nav";
 import { Link } from "react-router-dom";
 import ProjectDetails from "../components/project-details";
@@ -12,13 +11,14 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Nav background="black"/>
-        <Hero
-          id="home"
-          sideTitle="Intro"
-          heading="Kitty Allen"
-          overline="Hi, my name is Kitty. I'm a digital designer/developer working in London."
-        />
-        <section className="background-light d-flex flex-wrap justify-between top-curtain" id='work'>
+        <div id='home' className="background-dark top-curtain">
+            <h1 className='heading-1 pt-30'>Kitty Allen</h1>
+            <h3 className="overline-1">Hi, my name is Kitty. I'm a digital designer/developer working in London.</h3>
+          </div>
+        <section className="background-light" id='work'>
+          <span className='overline-1 dark-text'>work</span>
+          <h2 className='heading-2 dark-text'>Case Studies</h2>
+          <div className="d-flex flex-wrap justify-between">
           <ProjectDetails
             overview="Overview"
             projectLink="project/1"
@@ -66,6 +66,8 @@ class Home extends Component {
               </button>
             </a>
           </div>
+          </div>
+
         </section>
         <section className="background-semi-dark top-curtain">
           <span className="overline-1">Blog</span>
@@ -76,7 +78,7 @@ class Home extends Component {
               <p className="overline">3rd March, 2019</p>
               <div>
                 <Link to="article/1">
-                  <h3 className="heading-2 underlined">
+                  <h3 className="heading-2-1 underlined">
                     Title of the first blog
                   </h3>
                 </Link>
@@ -90,7 +92,7 @@ class Home extends Component {
               <p className="overline">3rd March, 2019</p>
               <div>
                 <Link to="article/2">
-                  <h3 className="heading-2 underlined">
+                  <h3 className="heading-2-1 underlined">
                     Title of the first blog
                   </h3>
                 </Link>
@@ -104,7 +106,7 @@ class Home extends Component {
               <p className="overline">3rd March, 2019</p>
               <div>
                 <Link to="article/3">
-                  <h3 className="heading-2 underlined">
+                  <h3 className="heading-2-1 underlined">
                     Title of the first blog
                   </h3>
                 </Link>
@@ -171,11 +173,13 @@ class Home extends Component {
           </div>
         </section>
 
-        <Hero
-          id="contact"
-          heading="Say hi"
-          overline="Email me at kallen91@gmail.com"
-        />
+          <div id="contact" className="background-dark">
+            <h1 className='heading-1 vertical'>Contact</h1>
+            <div>
+              <h3 className="overline-1 pl-40">Email: k.allen91@gmail.com</h3>
+              <h3 className="overline-1 pl-40">Phone: 07869578311</h3>
+            </div>
+          </div>
       </React.Fragment>
     );
   }
