@@ -1,8 +1,7 @@
 import React from "react";
 import "./nav.css";
 import "../style.css";
-import { Link } from "react-router-dom";
-// TODO: the link isnt loading from react-router-dom properly
+import { HashLink as Link } from 'react-router-hash-link';
 class Nav extends React.Component {
 
 
@@ -10,12 +9,12 @@ class Nav extends React.Component {
     return (
       <div className={`nav-background-light nav`}>
         <ul>
-          <Link to='/'>home</Link>
+          <Link to='/' className='text-color-dark'>home</Link>
         </ul>
         <ul>
-          <Link to='/'>work</Link>
-          <Link to='/'>values</Link>
-          <Link to='/'>contact</Link>
+          <Link to='/#work' className='text-color-dark'>work</Link>
+          <Link to='/#values' className='text-color-dark'>values</Link>
+          <Link to='/#contact' className='text-color-dark'>contact</Link>
         </ul>
       </div>
     );

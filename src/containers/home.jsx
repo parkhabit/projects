@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../style.css";
 import Nav from "../components/nav";
 import { Link } from "react-router-dom";
-import ProjectDetails from "../components/project-details";
+import ProjectDetails from "../components/project";
 import placeholder from "../assets/placeholder.jpg";
 import arrowRight from "../assets/arrow-right.png";
 

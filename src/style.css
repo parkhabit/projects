@@ -1,9 +1,4 @@
 /* ///////////////////////////////////////////// FONTS */
-:root {
-  --white: #f0f0f0;
-  --black: #151314;
-}
-
 .heading-1 {
   font-weight: bold;
   font-size: 5rem;
@@ -169,6 +164,10 @@ a {
   justify-content: space-between;
 }
 
+.p1 {
+  padding: 1rem;
+}
+
 .pt-1 {
   padding-top: 1rem;
 }
@@ -207,6 +206,10 @@ a {
 
 .margin-md {
   margin: 60px 0 60px 0;
+}
+
+.m0 {
+  margin: 0;
 }
 
 .h100 {
@@ -302,25 +305,37 @@ h1 {
   align-self: flex-end;
   margin-bottom: 2rem;
 }
-/* 
-.top-curtain{
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+
+/*PROJECT STUFF*/
+.main-project-img{
+  width: 100%;
 }
 
-.bottom-curtain {
-  position: fixed;
-  top: 0;
-  z-index: -1;
-  height: 100vh;
-} */
-
-/* .reveal-main {
-  height: 100vh;
-} */
+.no-padding {
+  padding: 0;
+}
 
 @media only screen and (min-width: 768px) {
+  .main-project-title {
+    z-index: 2;
+    position: absolute;
+    top: 7rem;
+    background-color: var(--white);
+    width: 40%;
+    right: 10px;
+    padding: 7% 12%;
+  }
+
+  .main-article {
+    width: 70%;
+    padding-left: 15%;
+  }
+  
+  .main-project-img {
+    width: 500px;
+    height: 500px;
+  }
+
   .p-lg-1 {
     padding: 1rem;
   }

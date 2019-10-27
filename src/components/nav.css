@@ -3,7 +3,7 @@
   }
   
 .nav-background-light {
-background-color: #f0f0f0;
+background-color: var(--white);
 }
 
 .nav {
@@ -29,19 +29,16 @@ background-color: #f0f0f0;
 
 .nav a {
     min-width: 60px;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid var(--white);
     margin: 3px;
     padding-bottom: 4px;
     text-align: center;
 }
 
-ul > .active {
-    color: red;
-}
 
-.text-color-dark {
-    color: #282626;
-    border-bottom: 1px solid #282626;
+.nav a.text-color-dark {
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
 }
 
 @media only screen and (min-width: 768px) {
