@@ -1,8 +1,14 @@
 /* ///////////////////////////////////////////// FONTS */
+:root {
+  --white: #f0f0f0;
+  --black: #222;
+}
+
 .heading-1 {
   font-weight: bold;
   font-size: 5rem;
   letter-spacing: 0.08rem;
+  line-height: 1;
 }
 
 .heading-2 {
@@ -29,10 +35,9 @@
 }
 
 .heading-5 {
-  font-weight: 600;
-  font-size: 0.9375rem;
-  line-height: 1.4375rem;
-  letter-spacing: 0.05rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .text {
@@ -59,6 +64,10 @@
 .underlined {
   text-decoration: underline;
   cursor: pointer;
+}
+
+#home {
+  padding-left: 30px;
 }
 
 .overline-intro {
@@ -96,7 +105,7 @@
 }
 
 a {
-  color: #f0f0f0;
+  color: var(--white);
   text-decoration: none;
   cursor: pointer;
 }
@@ -190,7 +199,7 @@ a {
 }
 
 .background-light {
-  background-color: #f0f0f0;
+  background-color: var(--white);
   padding: 15px;
   box-sizing: border-box;
   min-height: 100vh;
@@ -222,7 +231,7 @@ h1 {
 
 .divider-light {
   display: block;
-  border: 1px solid #e7e7e7;
+  border: 1px solid var(--white);
 }
 
 .divider-darker {
@@ -232,7 +241,7 @@ h1 {
 
 .divider-small-dark {
   display: block;
-  border: 1px solid #282626;
+  border: 1px solid var(--black);
   width: 50%;
   margin-top: 5rem;
   opacity: .4;
@@ -240,7 +249,7 @@ h1 {
 
 .divider-dark {
   display: block;
-  border: 1px solid #282626;
+  border: 1px solid var(--black);
   width: 100%;
 }
 
@@ -248,12 +257,12 @@ h1 {
   display: inline-block;
   margin: auto 1rem auto 0;
   width: 2rem;
-  border: 1px solid #282626;
+  border: 1px solid var(--black);
 }
 
 .navigation-top {
   height: 3rem;
-  background-color: #f0f0f0;
+  background-color: var(--white);
   padding: 15px 15px 5px 0;
 }
 
@@ -275,8 +284,8 @@ h1 {
 }
 
 .dark-button {
-  background-color: #282626;
-  color: #f0f0f0;
+  background-color: var(--black);
+  color: var(--white);
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 15px;
   height: 42px;

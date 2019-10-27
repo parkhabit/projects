@@ -13,7 +13,7 @@ class Home extends Component {
         <Nav background="black"/>
         <div id='home' className="background-dark top-curtain">
             <h1 className='heading-1 pt-30'>Kitty Allen</h1>
-            <h3 className="overline-1">Hi, my name is Kitty. I'm a digital designer/developer working in London.</h3>
+            <h3 className="heading-5">Hi, my name is Kitty. I'm a digital designer/developer working in London.</h3>
           </div>
         <section className="background-light" id='work'>
           <div className='section-heading'>
@@ -78,7 +78,7 @@ class Home extends Component {
           </div>
           <div className="w-lg-80 h-lg-100 ml-20">
             <article className="d-lg-flex justify-around-lg margin-md">
-              <p className="overline pr-lg-20">3rd March, 2019</p>
+              <p className="text light-text pr-lg-20">3rd March, 2019</p>
               <div>
                 <Link to="article/1">
                   <h3 className="heading-2-1 underlined">
@@ -92,7 +92,7 @@ class Home extends Component {
               </div>
             </article>
             <article className="d-lg-flex justify-around-lg margin-md">
-              <p className="overline pr-lg-20">3rd March, 2019</p>
+              <p className="text light-text pr-lg-20">3rd March, 2019</p>
               <div>
                 <Link to="article/2">
                   <h3 className="heading-2-1 underlined">
@@ -106,7 +106,7 @@ class Home extends Component {
               </div>
             </article>
             <article className="d-lg-flex justify-around-lg margin-md">
-              <p className="overline pr-lg-20">3rd March, 2019</p>
+              <p className="text light-text pr-lg-20">3rd March, 2019</p>
               <div>
                 <Link to="article/3">
                   <h3 className="heading-2-1 underlined">
