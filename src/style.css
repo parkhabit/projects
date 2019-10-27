@@ -184,6 +184,7 @@ a {
   display: none;
 }
 .background-dark {
+  background-color: var(--black);
   background-image: url('./assets/image.png');
   min-height: 100vh;
   width: 100%;
@@ -330,7 +331,7 @@ h1 {
     width: 70%;
     padding-left: 15%;
   }
-  
+
   .main-project-img {
     width: 500px;
     height: 500px;

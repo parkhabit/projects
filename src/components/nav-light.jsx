@@ -7,7 +7,7 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <div className={`nav-background-light nav`}>
+      <nav className={`nav-background-light nav`}>
         <ul>
           <Link to='/' className='text-color-dark'>home</Link>
         </ul>
@@ -16,7 +16,7 @@ class Nav extends React.Component {
           <Link to='/#values' className='text-color-dark'>values</Link>
           <Link to='/#contact' className='text-color-dark'>contact</Link>
         </ul>
-      </div>
+      </nav>
     );
   }
 }
