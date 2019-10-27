@@ -182,8 +182,8 @@ class Home extends Component {
           <div id="contact" className="background-dark">
             <h1 className='heading-1 vertical'>Contact</h1>
             <div>
-              <h3 className="overline-1 pl-40">Email: k.allen91@gmail.com</h3>
-              <h3 className="overline-1 pl-40">Phone: 07869578311</h3>
+              <h3 className="heading-5 pl-40">Email: k.allen91@gmail.com</h3>
+              <h3 className="heading-5 pl-40">Phone: 07869578311</h3>
             </div>
           </div>
       </React.Fragment>

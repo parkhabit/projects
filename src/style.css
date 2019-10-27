@@ -1,7 +1,7 @@
 /* ///////////////////////////////////////////// FONTS */
 :root {
   --white: #f0f0f0;
-  --black: #222;
+  --black: #151314;
 }
 
 .heading-1 {
@@ -139,7 +139,7 @@ a {
 }
 
 .dark-text {
-  color: #282626;
+  color: var(--black);
 }
 
 .strikethrough {
@@ -193,7 +193,7 @@ a {
 }
 
 .background-semi-dark {
-  background-color: #282626;
+  background-color: var(--black);
   min-height: 100vh;
   padding: 15px;
 }
