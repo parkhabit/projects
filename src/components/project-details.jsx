@@ -24,11 +24,11 @@ class ProjectDetails extends Component {
           <span className="heading-6 dark-text">{description}</span>
           <p className="text dark-text h-20">{paragraph}</p>
           <img className="project-img" src={img} alt={imgAlt} />
-          <div>
+          <div className='pt-1'>
             <hr className="divider-small" />
             <span className="underline dark-text">{skills}</span>
           </div>
-          <hr className="divider-dark" />
+          <hr className="divider-small-dark" />
         </Link>
       </div>
     );

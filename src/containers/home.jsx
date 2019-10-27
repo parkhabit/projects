@@ -16,8 +16,10 @@ class Home extends Component {
             <h3 className="overline-1">Hi, my name is Kitty. I'm a digital designer/developer working in London.</h3>
           </div>
         <section className="background-light" id='work'>
+          <div className='section-heading'>
           <span className='overline-1 dark-text'>work</span>
-          <h2 className='heading-2 dark-text'>Case Studies</h2>
+          <h2 className='heading-2 dark-text'>Case Studies</h2> 
+          </div>
           <div className="d-flex flex-wrap justify-between">
           <ProjectDetails
             overview="Overview"
@@ -51,18 +53,18 @@ class Home extends Component {
             imgAlt="placeholder"
             skills="Project 3"
           />
-          <div>
+          <div className='p-lg-1'>
             <hr className="divider-small" />
             <h4 className="heading-3 dark-text inline">Want to see more?</h4>
             <p className="text dark-text">
-              Check out my GitHub
+              Check out my GitHub for
               <br />
-              for other past projects.
+              other past projects.
             </p>
             <a href="https://www.github.com/parkhabit">
               <button className="dark-button">
                 See more
-                <img src={arrowRight} alt="arrow" />
+                <img src={arrowRight} className="btn-arrow" alt="arrow" />
               </button>
             </a>
           </div>
@@ -70,12 +72,13 @@ class Home extends Component {
 
         </section>
         <section className="background-semi-dark top-curtain">
-          <span className="overline-1">Blog</span>
+          <div className='section-heading'>
+          <span className="overline-1">blog</span>
           <h3 className="heading-2">What I write</h3>
-
-          <div className="w-lg-80 h-lg-100">
+          </div>
+          <div className="w-lg-80 h-lg-100 ml-20">
             <article className="d-lg-flex justify-around-lg margin-md">
-              <p className="overline">3rd March, 2019</p>
+              <p className="overline pr-lg-20">3rd March, 2019</p>
               <div>
                 <Link to="article/1">
                   <h3 className="heading-2-1 underlined">
@@ -89,7 +92,7 @@ class Home extends Component {
               </div>
             </article>
             <article className="d-lg-flex justify-around-lg margin-md">
-              <p className="overline">3rd March, 2019</p>
+              <p className="overline pr-lg-20">3rd March, 2019</p>
               <div>
                 <Link to="article/2">
                   <h3 className="heading-2-1 underlined">
@@ -103,7 +106,7 @@ class Home extends Component {
               </div>
             </article>
             <article className="d-lg-flex justify-around-lg margin-md">
-              <p className="overline">3rd March, 2019</p>
+              <p className="overline pr-lg-20">3rd March, 2019</p>
               <div>
                 <Link to="article/3">
                   <h3 className="heading-2-1 underlined">
@@ -121,8 +124,11 @@ class Home extends Component {
 
         <div className="reveal-main"></div>
         <section className="background-light bottom-curtain" id='values'>
-          <span className="overline-1 dark-text">Values</span>
-          <h3 className="heading-2 dark-text">How I work</h3>
+          <div className='section-heading'>
+            <span className="overline-1 dark-text">values</span>
+            <h3 className="heading-2 dark-text">How I work</h3>
+          </div>
+
           <div className="d-flex flex-wrap">
             <span className="w-30" />
             <article className="w-30">

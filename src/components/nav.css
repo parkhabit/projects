@@ -28,18 +28,15 @@ background-color: #f0f0f0;
 }
 
 .nav a {
-    min-width: 70px;
+    min-width: 60px;
     border-bottom: 1px solid #f0f0f0;
     margin: 3px;
     padding-bottom: 4px;
+    text-align: center;
 }
 
 ul > .active {
     color: red;
-}
-
-.nav :first-child :first-child {
-    min-width: 100px;
 }
 
 .text-color-dark {
